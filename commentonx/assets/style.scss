@@ -1,7 +1,10 @@
 $colour-dark: #111111;
 $colour-grey: #222222;
 $colour-text-light: #eeeeee;
+$colour-text-red: #ff4444;
+$colour-text-green: #448844;
 $colour-footer-text: #aaaaaa;
+
 
 $font: 'VT323', 'monospace';
 
@@ -52,5 +55,17 @@ body {
     margin-top: 0.5em;
     border-radius: 0;
     background-color: $colour-grey;
+  }
+
+  .alert-error {
+    border-radius: 0;
+    background-color: $colour-grey;
+    color: $colour-text-red;
+  }
+
+  .alert-success {
+    border-radius: 0;
+    background-color: $colour-grey;
+    color: $colour-text-green;
   }
 }
