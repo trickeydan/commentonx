@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="font-family: 'VT323';color: #eeeeee;font-size: 3em;">{{ VIEW_CONFIG["NAME"] }}&trade; Self-Improvement Program</h1>
+    <p style="font-family: 'VT323';color: #eeeeee;font-size: 1.5em;">Thank you for your purchase of a {{ VIEW_CONFIG["NAME"] }}&trade;. In order to optimise customer satisfaction, we have created an anonymous feedback form for comments about your {{ VIEW_CONFIG["NAME"] }}&trade;. You can comment on the actions and personality of your {{ VIEW_CONFIG["NAME"] }}&trade;. Critical but constructive feedback
+        is encouraged.</p>
+    <form>
+        <div class="form-group"><label style="color: #eeeeee;font-family: 'VT323';">Please add your comments below</label><textarea class="form-control" style="background-color: #222222;outline: 0;outline-color: transparent;font-family: 'VT323';resize: none;color: #eeeeee;font-size: 1.2em;width: 100%;"
+                rows="5" cols="0"></textarea></div>
+        <p style="font-family: 'VT323';color: #eeeeee;font-size: 1.5em;">Please re-read your comments before submitting, you are not able to retract, change or add more detail later.</p>
+        <button class="btn btn-dark" type="button" style="border-radius: 0;background-color: #222222;font-family: 'VT323';">Submit Feedback</button>
+    </form>
+{% endblock %}
