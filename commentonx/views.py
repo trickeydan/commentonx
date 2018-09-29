@@ -6,6 +6,7 @@ from flask import url_for
 
 from commentonx import app
 from commentonx.recaptcha import is_human
+from commentonx.email import send_feedback
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -20,6 +21,8 @@ def index():
                 if 'g-recaptcha-response' in request.form:
 
                     if is_human(request.form['g-recaptcha-response']):
+
+                        send_feedback(request.form['feedback'])
 
                         flash('Thank you! Your feedback is on it\'s way.', 'success')
                     else:
