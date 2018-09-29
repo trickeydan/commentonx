@@ -18,6 +18,7 @@
             <textarea minlength="20" name="feedback" class="form-control" rows="5" cols="0"></textarea>
         </div>
         <p>Please re-read your comments before submitting, you are not able to retract, change or add more detail later.</p>
+        <div class="g-recaptcha" data-sitekey="{{ VIEW_CONFIG['RECAPTCHA_SITE_KEY'] }}" data-theme="dark"></div>
         <input class="btn btn-dark" type="submit" value="Submit Feedback">
     </form>
 {% endblock %}
