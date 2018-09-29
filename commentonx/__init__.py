@@ -12,6 +12,7 @@ if 'VIEW_CONFIG' in app.config:
 else:
     app.jinja_env.globals['VIEW_CONFIG'] = {}
 
+app.secret_key = "super secret key"
 Scss(app)
 
 from commentonx import views
