@@ -20,6 +20,11 @@ body {
   footer {
     margin-top: 2em;
     color: $colour-footer-text;
+
+    a {
+      color: $colour-footer-text;
+      text-decoration: underline;
+    }
   }
 
   h1 {
