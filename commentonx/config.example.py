@@ -1,9 +1,15 @@
+from commentonx.mail.mock import send_email
 config = {}
 
 config["RECAPTCHA_SITE_KEY"] = "NOT_VERY_SECRET_GOOGLE_KEY"
 config["RECAPTCHA_SECRET"] = "SUPER_SECRET_GOOGLE_KEY"
 
 config["SESSION_KEY"] = "MAKE_ME_RANDOM"
+
+config["MAIL_BACKEND"] = send_email
+config["MAIL_TO"] = "contact@example"
+config["MAIL_FROM"] = "feedback@example.com"
+config["MAIL_SUBJECT"] = "CommentOnX Feedback"
 
 config["VIEW_CONFIG"] = {}
 
