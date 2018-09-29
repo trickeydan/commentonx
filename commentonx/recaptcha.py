@@ -1,7 +1,7 @@
-from commentonx import app
-
 import json
+
 import requests
+from commentonx import app
 
 
 def is_human(response):

@@ -1,6 +1,7 @@
 from commentonx import app
 from flask import render_template
 
+
 def send_feedback(feedback):
 
     send_email = app.config["MAIL_BACKEND"]

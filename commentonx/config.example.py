@@ -1,4 +1,5 @@
 from commentonx.mail.mock import send_email
+
 config = {}
 
 config["RECAPTCHA_SITE_KEY"] = "NOT_VERY_SECRET_GOOGLE_KEY"
@@ -16,4 +17,5 @@ config["SPARKPOST_KEY"] = "Sparkpost Key"
 config["VIEW_CONFIG"] = {}
 
 config["VIEW_CONFIG"]["NAME"] = "X"
-config["VIEW_CONFIG"]["RECAPTCHA_SITE_KEY"] = config["RECAPTCHA_SITE_KEY"] # Copy the site key into the view_config
+# Copy the site key into the view_config
+config["VIEW_CONFIG"]["RECAPTCHA_SITE_KEY"] = config["RECAPTCHA_SITE_KEY"]

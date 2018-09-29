@@ -1,4 +1,5 @@
 from commentonx.mail.sparkpost import send_email
+
 config = {}
 
 config["RECAPTCHA_SITE_KEY"] = "6LcEwXIUAAAAAImsYjyZlhAzbIgNlFUOnZr5fp7N"

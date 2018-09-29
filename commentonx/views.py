@@ -1,12 +1,7 @@
-from flask import flash
-from flask import redirect
-from flask import render_template
-from flask import request
-from flask import url_for
-
 from commentonx import app
-from commentonx.recaptcha import is_human
 from commentonx.email import send_feedback
+from commentonx.recaptcha import is_human
+from flask import flash, redirect, render_template, request, url_for
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -34,4 +29,3 @@ def index():
         else:
             flash('You need to provide feedback!', 'error')
         return redirect(url_for('index'))
-

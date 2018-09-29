@@ -1,0 +1,21 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+
+    working_directory: ~/commentonx
+
+    steps:
+      - checkout
+
+      - run:
+          name: install dependencies
+          command: |
+            pip install pipenv
+            pipenv install --dev
+
+      - run:
+          name: Linting
+          command: |
+            pipenv run flake8
