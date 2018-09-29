@@ -8,6 +8,7 @@ flask = "*"
 flask-scss = "*"
 requests = "*"
 sparkpost = "*"
+gunicorn = "*"
 
 [dev-packages]
 flake8 = "*"
@@ -22,3 +23,7 @@ flake8-tuple = "*"
 
 [requires]
 python_version = "3.6"
+
+[scripts]
+
+serve = "gunicorn -b 127.0.0.1:8080 commentonx:app"
