@@ -1,0 +1,52 @@
+$colour-dark: #111111;
+$colour-grey: #222222;
+$colour-text-light: #eeeeee;
+$colour-footer-text: #aaaaaa;
+
+$font: 'VT323', 'monospace';
+
+body {
+  background-color: $colour-dark;
+  border: 0;
+  resize: none;
+  outline: none;
+}
+
+.commentonx {
+  font-family: $font;
+  color: $colour-text-light;
+  & div {
+    padding-top: 1.5em;
+  }
+
+  footer {
+    margin-top: 2em;
+    color: $colour-footer-text;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  p {
+    font-size:1.5em;
+  }
+
+  textarea {
+    background-color: $colour-grey;
+    color: $colour-text-light;
+    resize: none;
+    font-size: 1.2em;
+    width: 100%;
+
+    &:focus {
+      color: $colour-text-light;
+      background-color: $colour-grey;
+    }
+  }
+
+  button {
+    border-radius: 0;
+    background-color: $colour-grey;
+  }
+}
