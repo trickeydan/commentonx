@@ -10,4 +10,4 @@ def send_feedback(feedback):
     subject = app.config["MAIL_SUBJECT"]
     content = render_template("email.html", feedback=feedback)
 
-    send_email(to_address, from_address, subject, content)
+    send_email(app, to_address, from_address, subject, content)

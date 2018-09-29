@@ -1,4 +1,4 @@
-from commentonx.mail.mock import send_email
+from commentonx.mail.sparkpost import send_email
 config = {}
 
 config["RECAPTCHA_SITE_KEY"] = "6LcEwXIUAAAAAImsYjyZlhAzbIgNlFUOnZr5fp7N"
@@ -11,6 +11,7 @@ config["MAIL_TO"] = "contact@trickey.io"
 config["MAIL_FROM"] = "feedback@trickey.io"
 config["MAIL_SUBJECT"] = "CommentOnDan Feedback"
 
+config["SPARKPOST_KEY"] = "652ee470e7c7b4103cf214960cf0492768492167"
 
 config["VIEW_CONFIG"] = {}
 

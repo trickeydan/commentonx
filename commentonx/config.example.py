@@ -11,6 +11,8 @@ config["MAIL_TO"] = "contact@example"
 config["MAIL_FROM"] = "feedback@example.com"
 config["MAIL_SUBJECT"] = "CommentOnX Feedback"
 
+config["SPARKPOST_KEY"] = "Sparkpost Key"
+
 config["VIEW_CONFIG"] = {}
 
 config["VIEW_CONFIG"]["NAME"] = "X"
